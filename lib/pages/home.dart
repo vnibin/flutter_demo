@@ -25,8 +25,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
 
     _getCoupons();
-    final List<String> entries = <String>['A', 'B', 'C'];
-    final List<int> colorCodes = <int>[600, 500, 100];
 
 
 
@@ -44,8 +42,8 @@ class _HomePageState extends State<HomePage> {
           child: ListView.separated(
             padding: EdgeInsets.only(bottom: 20),
               scrollDirection: Axis.vertical,
-              separatorBuilder: (context,index)=>SizedBox(height: 25,),
-              itemCount: entries.length,
+              separatorBuilder: (context,index)=>SizedBox(height: 12,),
+              itemCount: coupons.length,
               itemBuilder: (BuildContext context, int index) {
 
 
@@ -57,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                   height: 250,
                   decoration: BoxDecoration(
                     color: const Color(0xFF00aaf8),
-                    borderRadius: BorderRadius.circular(20.0),
+                    borderRadius: BorderRadius.circular(15.0),
 
                     // Adjust the radius to your preference
                   ),
@@ -88,7 +86,7 @@ class _HomePageState extends State<HomePage> {
 
                             children:[
                               Container(
-                                padding: EdgeInsets.only(left:20),
+                                padding: EdgeInsets.only(left:10),
                                 width: 200, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
                                 child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
                                   Text(coupons[index].couponNo,
@@ -100,7 +98,7 @@ class _HomePageState extends State<HomePage> {
 
 
                               ),
-                              Padding(padding: EdgeInsets.only(left: 20),
+                              Padding(padding: EdgeInsets.only(left: 10),
                                 child: Text(coupons[index].customerName,
                                   textAlign: TextAlign.start,
                                   style: TextStyle(color: Colors.white,
@@ -109,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                               ),
 
                               Container(
-                                padding: EdgeInsets.only(left:20),
+                                padding: EdgeInsets.only(left:10),
                                 width: 200, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
                                 child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
                                 Text(coupons[index].allocatedRmn,
@@ -125,7 +123,7 @@ class _HomePageState extends State<HomePage> {
 
                               ,
                               Container(
-                                padding: EdgeInsets.only(left:20),
+                                padding: EdgeInsets.only(left:10),
                                 width: 200, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
                                 child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
                                 Text(coupons[index].allocatedDate,
@@ -137,7 +135,7 @@ class _HomePageState extends State<HomePage> {
 
 
                               ),
-                              Padding(padding: EdgeInsets.only(left: 20),
+                              Padding(padding: EdgeInsets.only(left: 10),
                                 child: Text(coupons[index].expiredOn,
                                   style: TextStyle(color: Colors.white,
                                       fontSize: 11),),
@@ -145,13 +143,13 @@ class _HomePageState extends State<HomePage> {
 
                               ),
 
-                              Padding(padding: EdgeInsets.only(left: 20),
+                              Padding(padding: EdgeInsets.only(left: 10),
                                 child: Text(coupons[index].ottCustomerId,
                                   style: TextStyle(color: Colors.white,
                                       fontSize: 11),),
                               ),
 
-                              Padding(padding: EdgeInsets.only(left: 20),
+                              Padding(padding: EdgeInsets.only(left: 10),
                                 child: Text(coupons[index].transactionId,
                                   style: TextStyle(color: Colors.white,
                                       fontSize: 11),),
@@ -249,34 +247,6 @@ class _HomePageState extends State<HomePage> {
 
 
 
-      /*body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(height: 30),
-          //_customItem()
-         // _couponsSection()
-
-
-
-
-
-       *//* ListView.separated(
-
-            padding: EdgeInsets.only(left: 20,right: 20),
-            scrollDirection: Axis.vertical,
-            separatorBuilder: (context,index)=>
-                SizedBox(width: 25,),
-            itemCount: coupons.length,
-            itemBuilder: (context,index){
-              _couponsSection();
-
-
-            }
-        )*//*
-
-        ],
-      ),
-*/
 
 
     );
@@ -317,168 +287,6 @@ class _HomePageState extends State<HomePage> {
   }
 
 
-  // child:ListView.separated(
-  // separatorBuilder: (context,index)=>SizedBox(width: 25,),
-  // itemCount: coupons.length,
-  // itemBuilder: (context,index){
-  // return
-  // }
-  //
-  // )
-
-  Container _couponsSection()
-  {
-
-
-    return Container(
-        margin: const EdgeInsets.symmetric(horizontal: 10.0),
-        width: double.infinity,
-        height: 250,
-        decoration: BoxDecoration(
-          color: const Color(0xFF00aaf8),
-          borderRadius: BorderRadius.circular(20.0),
-
-          // Adjust the radius to your preference
-        ),
-
-
-
-
-
-child: Stack(
-  children: [
-
-  // Align the button to the bottom right
-     Row(
-      crossAxisAlignment:CrossAxisAlignment.start ,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
-      // Adjust the alignment as needed
-      children: [
-
-
-        Column(
-
-
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-
-          children:[
-
-            Padding(padding: EdgeInsets.only(left: 20),
-              child: Text('Column 1',
-                style: TextStyle(color: Colors.white),),
-
-            ),
-            Padding(padding: EdgeInsets.only(left: 20),
-              child: Text('Column 2',
-                style: TextStyle(color: Colors.white),),
-
-            ),
-            Padding(padding: EdgeInsets.only(left: 20),
-              child: Text('Column 3',
-                style: TextStyle(color: Colors.white),
-              ),
-
-
-            ),
-            Padding(padding: EdgeInsets.only(left: 20),
-              child: Text('Column 4',
-                style: TextStyle(color: Colors.white),),
-
-
-            ),
-            Padding(padding: EdgeInsets.only(left: 20),
-              child: Text('Column 5',
-                style: TextStyle(color: Colors.white),),
-
-
-            ),
-
-            Padding(padding: EdgeInsets.only(left: 20),
-              child: Text('Column 5',
-              style: TextStyle(color: Colors.white),),
-            ),
-
-
-          ],
-        ),
-
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
-
-          children: [
-            Padding(padding: EdgeInsets.only(right: 10,top: 20),
-              child: Text('Column 1',
-                style: TextStyle(color: Colors.white),),
-
-            ),
-
-            Padding(padding: EdgeInsets.only(right: 10,top: 40),
-              child: Text('Column 1',
-                style: TextStyle(color: Colors.white),),
-
-            ),
-
-            Padding(padding: EdgeInsets.only(right: 10,top: 20),
-              child: Text('Column 1',
-                style: TextStyle(color: Colors.white),),
-
-            ),
-
-            Padding(padding: EdgeInsets.only(right: 10,top: 20),
-              child: Text('Column 1',
-                style: TextStyle(color: Colors.white),),
-
-            ),
-
-          ],
-        ),
-
-
-      ],
-    ),
-
-
-
-    Container(
-      margin: EdgeInsets.only(top: 10),
-
-
-      child: Align(
-        alignment: Alignment.bottomRight,
-
-        child: Container(
-          margin: EdgeInsets.only(top: 20,right: 10),
-          child: ElevatedButton(
-
-            style: ElevatedButton.styleFrom(
-              primary: Colors.white, // Set the background color here
-            ),
-
-            onPressed: () {
-              // Button action here
-            },
-            child: Text('View Details',
-              style: TextStyle(
-                  color: Colors.black
-              ),),
-          ),
-        ),
-
-      ),
-    )
-    ],
-
-
-    ),
-
-
-
-
-
-      );
-  }
 
 
 
