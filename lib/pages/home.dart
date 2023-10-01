@@ -175,14 +175,14 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.end,
 
                           children: [
-                            Padding(padding: EdgeInsets.only(right: 10,top: 20),
+                            Padding(padding: EdgeInsets.only(right: 10,top: 10),
                               child: Text(coupons[index].packageName,
                                 style: TextStyle(color: Colors.white,
                                     fontSize: 11),),
 
                             ),
 
-                            Padding(padding: EdgeInsets.only(right: 10,top: 40),
+                            Padding(padding: EdgeInsets.only(right: 10,top: 25),
                               child: Text(coupons[index].consumedRmn,
                                 style: TextStyle(color: Colors.white,
                                     fontSize: 11),),
