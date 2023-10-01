@@ -34,7 +34,7 @@ class CouponModel {
 
     coupons.add(
       CouponModel(couponNo: "Coupon no : Masti-CouponSerialNo_11",
-          packageName: "Package Name : Watcho Masti", customerName: " Customer Name : N/A", allocatedRmn: " Allocated Mobile No :8726605238_1",
+          packageName: "Package Name : Watcho Masti", customerName: "Customer Name : N/A", allocatedRmn: "Allocated Mobile No :8726605238_1",
           allocatedDate: "Allocated on : 28-Dec-20222 06:26:PM", expiredOn: "Expired On : N/A", ottCustomerId: "OTT Customer Id : N/A",
           transactionId: "transaction Id : 202232323232323232", consumedRmn: "Consumed Mobile No : N/A",
           consumedDate: "Consumed On : N/A", watchoCustomerId: "Watcho Customer Id : 26")
@@ -43,7 +43,7 @@ class CouponModel {
 
     coupons.add(
     CouponModel(couponNo: "Coupon no :Masti-CouponSerialNo_12",
-        packageName: "Package Name : Watcho Masti", customerName: " Customer Name : N/A", allocatedRmn: " Allocated Mobile No :8726605238_1",
+        packageName: "Package Name : Watcho Masti", customerName: "Customer Name : N/A", allocatedRmn: " Allocated Mobile No :8726605238_1",
         allocatedDate: "Allocated on : 28-Dec-20222 06:26:PM", expiredOn: "Expired On : N/A", ottCustomerId: "OTT Customer Id : N/A",
         transactionId: "transaction Id : 202232323232323232", consumedRmn: "Consumed Mobile No : N/A",
         consumedDate: "Consumed On : N/A", watchoCustomerId: "Watcho Customer Id : 26")
@@ -53,7 +53,7 @@ class CouponModel {
 
     coupons.add(
     CouponModel(couponNo: "Coupon no :Masti-CouponSerialNo_13",
-        packageName: "Package Name : Watcho Masti", customerName: " Customer Name : N/A", allocatedRmn: " Allocated Mobile No :8726605238_1",
+        packageName: "Package Name : Watcho Masti", customerName: "Customer Name : N/A", allocatedRmn: " Allocated Mobile No :8726605238_1",
         allocatedDate: "Allocated on : 28-Dec-20222 06:26:PM", expiredOn: "Expired On : N/A", ottCustomerId: "OTT Customer Id : N/A",
         transactionId: "transaction Id : 202232323232323232", consumedRmn: "Consumed Mobile No : N/A",
         consumedDate: "Consumed On : N/A", watchoCustomerId: "Watcho Customer Id : 26")
@@ -63,7 +63,7 @@ class CouponModel {
 
     coupons.add(
     CouponModel(couponNo: "Coupon no :Masti-CouponSerialNo_14",
-        packageName: "Package Name : Watcho Masti", customerName: " Customer Name : N/A", allocatedRmn: " Allocated Mobile No :8726605238_1",
+        packageName: "Package Name : Watcho Masti", customerName: "Customer Name : N/A", allocatedRmn: " Allocated Mobile No :8726605238_1",
         allocatedDate: "Allocated on : 28-Dec-20222 06:26:PM", expiredOn: "Expired On : N/A", ottCustomerId: "OTT Customer Id : N/A",
         transactionId: "transaction Id : 202232323232323232", consumedRmn: "Consumed Mobile No : N/A",
         consumedDate: "Consumed On : N/A", watchoCustomerId: "Watcho Customer Id : 26")
