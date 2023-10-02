@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
 
                   margin: const EdgeInsets.symmetric(horizontal: 10.0),
               width: double.infinity,
-              height: 330,
+              height: 300,
               decoration: BoxDecoration(
               color: const Color(0xFF00aaf8),
               borderRadius: BorderRadius.circular(15.0),
@@ -90,7 +90,9 @@ class _HomePageState extends State<HomePage> {
                 child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
                 Text(coupons[index].couponNo,
                   style: TextStyle(color: Colors.white,
-                      fontSize: 11),
+                      fontWeight: FontWeight.w500,
+                      fontSize: 12,
+                  ),
 
                 ),
 
@@ -105,8 +107,9 @@ class _HomePageState extends State<HomePage> {
               Text(coupons[index].packageName,
                 textAlign: TextAlign.end,
               style: TextStyle(color: Colors.white,
+                  fontWeight: FontWeight.w500,
 
-              fontSize: 11),
+              fontSize: 12),
 
               )
               )
@@ -118,15 +121,16 @@ class _HomePageState extends State<HomePage> {
 
 
                 Container(
-                  margin: EdgeInsets.only(top: 8),
+
                   padding: EdgeInsets.only(left:10,top: 5),
                   width: 200, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
                   child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
                   Text(coupons[index].customerName,
                     textAlign: TextAlign.left,
                     style: TextStyle(color: Colors.white,
+                        fontWeight: FontWeight.w500,
 
-                        fontSize: 11),
+                        fontSize: 12),
                   ),
                 ),
 
@@ -138,7 +142,6 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment:MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 8),
                       padding: EdgeInsets.only(left:10,top: 5),
                       width: 200,
                       //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
@@ -146,8 +149,9 @@ class _HomePageState extends State<HomePage> {
                       Text(coupons[index].allocatedRmn,
                         textAlign: TextAlign.left,
                         style: TextStyle(color: Colors.white,
+                            fontWeight: FontWeight.w500,
 
-                            fontSize: 11),
+                            fontSize: 12),
                       ),
                     ),
 
@@ -160,7 +164,8 @@ class _HomePageState extends State<HomePage> {
                         Text(coupons[index].consumedRmn,
                           textAlign: TextAlign.end,
                           style: TextStyle(color: Colors.white,
-                              fontSize: 11),
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12),
 
                         )
                     ),
@@ -173,16 +178,17 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment:MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 8),
+
                       padding: EdgeInsets.only(left:10,top: 5),
                       width: 200,
-                      //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
-                      child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
+
+                      child:
                       Text(coupons[index].allocatedDate,
                         textAlign: TextAlign.left,
                         style: TextStyle(color: Colors.white,
+                            fontWeight: FontWeight.w500,
 
-                            fontSize: 11),
+                            fontSize: 12),
                       ),
                     ),
 
@@ -191,11 +197,12 @@ class _HomePageState extends State<HomePage> {
                     Container(
                         padding: EdgeInsets.only(right:10,top: 5),
                         width: 200,
-                        child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
+                        child:
                         Text(coupons[index].consumedDate,
                           textAlign: TextAlign.end,
                           style: TextStyle(color: Colors.white,
-                              fontSize: 11),
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12),
 
                         )
                     ),
@@ -204,13 +211,13 @@ class _HomePageState extends State<HomePage> {
 
                   ],),
                 Container(
-                  margin: EdgeInsets.only(top: 8),
-                  padding: EdgeInsets.only(left:10,top: 5),
-                  width: 210, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
-                  child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
+                  padding: EdgeInsets.only(left:10,top: 3),
+                  width: 210,
+                  child:
                   Text(coupons[index].expiredOn,
                     style: TextStyle(color: Colors.white,
-                        fontSize: 11),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12),
 
                   ),
 
@@ -222,16 +229,16 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment:MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 8),
                       padding: EdgeInsets.only(left:10,top: 5),
                       width: 200,
-                      //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
-                      child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
+
+                      child:
                       Text(coupons[index].ottCustomerId,
                         textAlign: TextAlign.left,
                         style: TextStyle(color: Colors.white,
+                            fontWeight: FontWeight.w500,
 
-                            fontSize: 11),
+                            fontSize: 12),
                       ),
                     ),
 
@@ -240,11 +247,12 @@ class _HomePageState extends State<HomePage> {
                     Container(
                         padding: EdgeInsets.only(right:10,top: 5),
                         width: 200,
-                        child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
+                        child:
                         Text(coupons[index].watchoCustomerId,
                           textAlign: TextAlign.end,
                           style: TextStyle(color: Colors.white,
-                              fontSize: 11),
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12),
 
                         )
                     ),
@@ -254,13 +262,14 @@ class _HomePageState extends State<HomePage> {
                   ],),
 
                   Container(
-                      margin: EdgeInsets.only(top: 8),
+
                       padding: EdgeInsets.only(left:10,top: 5),
-                      width: 210, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
-                      child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
+                      width: 210,
+                      child:
                       Text(coupons[index].transactionId,
                         style: TextStyle(color: Colors.white,
-                            fontSize: 11),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 12),
 
                       )),
 
@@ -275,7 +284,7 @@ class _HomePageState extends State<HomePage> {
                           child: ElevatedButton(
 
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.white, // Set the background color here
+                              primary: Colors.white,
                             ),
 
                             onPressed: () {
@@ -300,198 +309,6 @@ class _HomePageState extends State<HomePage> {
 
               ]  )
               );
-
-
-
-              // return Container(
-              //
-              //   margin: const EdgeInsets.symmetric(horizontal: 10.0),
-              //   width: double.infinity,
-              //   height: 250,
-              //   decoration: BoxDecoration(
-              //     color: const Color(0xFF00aaf8),
-              //     borderRadius: BorderRadius.circular(15.0),
-              //
-              //     // Adjust the radius to your preference
-              //   ),
-              //
-              //
-              //
-              //
-              //
-              //
-              //   child: Stack(
-              //     children: [
-              //
-              //       // Align the button to the bottom right
-              //       Row(
-              //         crossAxisAlignment:CrossAxisAlignment.start ,
-              //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //
-              //         // Adjust the alignment as needed
-              //         children: [
-              //
-              //
-              //           Column(
-              //             crossAxisAlignment: CrossAxisAlignment.start,
-              //
-              //
-              //             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //
-              //
-              //             children:[
-              //               Container(
-              //                 padding: EdgeInsets.only(left:10),
-              //                 width: 200, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
-              //                 child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
-              //                   Text(coupons[index].couponNo,
-              //                     style: TextStyle(color: Colors.white,
-              //                         fontSize: 11),
-              //
-              //                   ),
-              //
-              //
-              //
-              //               ),
-              //               Padding(padding: EdgeInsets.only(left: 10),
-              //                 child: Text(coupons[index].customerName,
-              //                   textAlign: TextAlign.start,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),),
-              //
-              //               ),
-              //
-              //               Container(
-              //                 padding: EdgeInsets.only(left:10),
-              //                 width: 200, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
-              //                 child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
-              //                 Text(coupons[index].allocatedRmn,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11
-              //                   ),
-              //                 ),
-              //
-              //
-              //
-              //               )
-              //
-              //
-              //               ,
-              //               Container(
-              //                 padding: EdgeInsets.only(left:10),
-              //                 width: 200, //This helps the text widget know what the maximum width is again! You may also opt to use an Expanded widget instead of a Container widget, if you want to use all remaining space.
-              //                 child:  //I added this widget to show that the width limiting widget doesn't need to be a direct parent.
-              //                 Text(coupons[index].allocatedDate,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),
-              //
-              //                 ),
-              //
-              //
-              //
-              //               ),
-              //               Padding(padding: EdgeInsets.only(left: 10),
-              //                 child: Text(coupons[index].expiredOn,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),),
-              //
-              //
-              //               ),
-              //
-              //               Padding(padding: EdgeInsets.only(left: 10),
-              //                 child: Text(coupons[index].ottCustomerId,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),),
-              //               ),
-              //
-              //               Padding(padding: EdgeInsets.only(left: 10),
-              //                 child: Text(coupons[index].transactionId,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),),
-              //               ),
-              //
-              //
-              //             ],
-              //           ),
-              //
-              //           Column(
-              //             crossAxisAlignment: CrossAxisAlignment.end,
-              //
-              //             children: [
-              //               Padding(padding: EdgeInsets.only(right: 10,top: 10),
-              //                 child: Text(coupons[index].packageName,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),),
-              //
-              //               ),
-              //
-              //               Padding(padding: EdgeInsets.only(right: 10,top: 25),
-              //                 child: Text(coupons[index].consumedRmn,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),),
-              //
-              //               ),
-              //
-              //               Padding(padding: EdgeInsets.only(right: 10,top: 20),
-              //                 child: Text(coupons[index].consumedDate,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),),
-              //
-              //               ),
-              //
-              //               Padding(padding: EdgeInsets.only(right: 10,top: 20),
-              //                 child: Text(coupons[index].watchoCustomerId,
-              //                   style: TextStyle(color: Colors.white,
-              //                       fontSize: 11),),
-              //
-              //               ),
-              //
-              //             ],
-              //           ),
-              //
-              //
-              //         ],
-              //       ),
-              //
-              //
-              //
-              //       Container(
-              //         margin: EdgeInsets.only(top: 10),
-              //
-              //
-              //         child: Align(
-              //           alignment: Alignment.bottomRight,
-              //
-              //           child: Container(
-              //             margin: EdgeInsets.only(top: 20,right: 10),
-              //             child: ElevatedButton(
-              //
-              //               style: ElevatedButton.styleFrom(
-              //                 primary: Colors.white, // Set the background color here
-              //               ),
-              //
-              //               onPressed: () {
-              //                 // Button action here
-              //               },
-              //               child: Text('View Details',
-              //                 style: TextStyle(
-              //                     color: Colors.black
-              //                 ),),
-              //             ),
-              //           ),
-              //
-              //         ),
-              //       )
-              //     ],
-              //
-              //
-              //   ),
-              //
-              //
-              //
-              //
-              //
-              // );
 
 
 
